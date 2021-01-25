@@ -1,5 +1,5 @@
 {
-    "name": "ptx-joystickbit",
+    "name": "ptx-oldjoystickbit",
     "description": "",
     "dependencies": {
         "core": "*",
