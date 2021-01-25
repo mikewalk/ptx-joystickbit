@@ -53,7 +53,7 @@ namespace oldjoystickbit {
     //% blockId=oldjoystickbit_Btn
     //% expandableArgumentMode="toggle"
     //% btn.defl=btnList.BUTTON_A
-    //% button.fieldEditor="gridpicker" button.fieldOptions.columns=3
+    //% btn.fieldEditor="gridpicker" btn.fieldOptions.columns=3
     export function buttonPressed(btn:btnList, btnState:btnStateList=btnStateList.pressed): boolean {
         let btnRead = pins.analogReadPin(AnalogPin.P2)
         let releaseCheck = (btnState == btnStateList.released)
