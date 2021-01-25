@@ -1,7 +1,7 @@
 
 > Open this page at [https://mikewalk.github.io/ptx-oldjoystickbit/](https://mikewalk.github.io/ptx-oldjoystickbit/)
 
-![](https://github.com/mikewalk/pxt-oldjoystickbit/blob/master/icon.png)
+![icon](https://raw.githubusercontent.com/mikewalk/ptx-oldjoystickbit/master/icon.png)
 
 ## Use as Extension
 
