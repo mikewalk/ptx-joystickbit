@@ -31,7 +31,7 @@ namespace oldjoystickbit {
     /**
     * Get the left-right position of the Joystick
     */
-    //% block="Joystick X position"
+    //% block="Joystick X"
     //% blockId=oldjoystickbit_X
     export function JoystickX(): number {
         return pins.analogReadPin(AnalogPin.P0) - midX;
@@ -40,7 +40,7 @@ namespace oldjoystickbit {
     /**
     * Get the up-down position of the Joystick
     */
-    //% block="Joystick Y position"
+    //% block="Joystick Y"
     //% blockId=oldjoystickbit_Y
     export function JoystickY(): number {
         return pins.analogReadPin(AnalogPin.P1) - midY;
@@ -78,7 +78,7 @@ namespace oldjoystickbit {
     /**
     * Calibrate Joysticks central position
     */
-    //% block="Calibrate joysticks center position"
+    //% block="Calibrate Joystick"
     //% blockId=oldjoystickbit_Calibrate 
     export function calibrate() {
         midX = pins.analogReadPin(AnalogPin.P0);
