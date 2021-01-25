@@ -27,6 +27,10 @@ namespace oldjoystickbit {
 
     let midX: number = 512;
     let midY: number = 512;
+
+    let joyMax: number = 1023;
+    let joyMid: number = 512;
+    let joyMin: number = 0;
     
     /**
     * Get the left-right position of the Joystick
@@ -34,7 +38,12 @@ namespace oldjoystickbit {
     //% block="Joystick X"
     //% blockId=oldjoystickbit_X
     export function JoystickX(): number {
-        return pins.analogReadPin(AnalogPin.P0) - midX;
+        let rawRead = pins.analogReadPin(AnalogPin.P0);
+        if (rawRead >= midX) {
+            return Math.map(rawRead,midX,joyMax,joyMid,joyMax);
+        } else {
+            return Math.map(rawRead,joyMin,midX-1,joyMin,joyMid-1);
+        }
     }
 
     /**
@@ -43,7 +52,12 @@ namespace oldjoystickbit {
     //% block="Joystick Y"
     //% blockId=oldjoystickbit_Y
     export function JoystickY(): number {
-        return pins.analogReadPin(AnalogPin.P1) - midY;
+        let rawRead = pins.analogReadPin(AnalogPin.P1);
+        if (rawRead >= midY) {
+            return Math.map(rawRead,midY,joyMax,joyMid,joyMax);
+        } else {
+            return Math.map(rawRead,joyMin,midY-1,joyMin,joyMid-1);
+        }
     }
 
     /**
