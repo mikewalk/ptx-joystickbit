@@ -14,7 +14,6 @@ enum btnList {
     //% block="F"
     F=6
 }
-
 enum btnStateList {
     //% block="Pressed"
     pressed = 1,
@@ -22,7 +21,8 @@ enum btnStateList {
     released = 0
 }
 
-//% weight=0 color=#555555 icon="\uf11b"
+//% weight=0
+//% color=#335533 icon="\uf11b"
 namespace joystickbit {
 
     //% block="Joystick X position"
@@ -35,7 +35,8 @@ namespace joystickbit {
         return Math.map(pins.analogReadPin(AnalogPin.P1), 0, 1023, -512, 511)
     }
 
-    //% block="Button %btn|  %btnEvent"
+    //% block="Button %btn||  %btnEvent"
+    //% expandableArgumentMode="toggle"
     //% btn.defl=btnList.A
     export function buttonPressed(btn:btnList, btnState:btnStateList): boolean {
         let btnRead = pins.analogReadPin(AnalogPin.P2)
