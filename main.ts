@@ -38,7 +38,7 @@ namespace joystickbit {
     //% block="Button %btn||  %btnEvent"
     //% expandableArgumentMode="toggle"
     //% btn.defl=btnList.A
-    export function buttonPressed(btn:btnList, btnState:btnStateList): boolean {
+    export function buttonPressed(btn:btnList, btnState:btnStateList=btnStateList.pressed): boolean {
         let btnRead = pins.analogReadPin(AnalogPin.P2)
         let releaseCheck = (btnState == btnStateList.released)
         
