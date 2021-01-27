@@ -59,9 +59,35 @@ namespace oldjoystickbit {
             return Math.map(rawRead,joyMin,midY-1,joyMin,joyMid-1);
         }
     }
+    
+    /**
+    * Return number of button that is pressed down (or zero if none)
+    */
+    //% block="Button Number Pressed"
+    //% blockId=oldjoystickbit_BtnNum
+    export function buttonNum(): number {
+        let btnRead = pins.analogReadPin(AnalogPin.P2)
+        
+        if (btnRead >= 0 &&  btnRead < 256) {
+            return 1;
+        } else if (btnRead >= 256 && btnRead < 597) {
+            return 2;
+        } else if (btnRead >= 597 && btnRead < 725) {
+            return 3;
+        } else if (btnRead >= 725 && btnRead < 793) {
+            return 4;
+        } else if (btnRead >= 793 && btnRead < 836) {
+            return 6;
+        } else if (btnRead >= 836 && btnRead < 938) {
+            return 5;
+        } else {
+            return 0;
+        }
+    }
+    
 
     /**
-    * Check if a spoecified button is pressed down
+    * Check if a specified button is pressed down
     */
     //% block="Button %btn||  %btnEvent"
     //% blockId=oldjoystickbit_Btn
