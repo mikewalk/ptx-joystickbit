@@ -1,4 +1,3 @@
-# pxt-oldjoystick
 ## A MakeCode Extension for version 1.4  of the Elecfreaks joystick:bit for micro:bit
 
 ![icon](https://raw.githubusercontent.com/mikewalk/pxt-oldjoystickbit/master/icon.png)
