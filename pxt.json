@@ -1,6 +1,6 @@
 {
-    "name": "ptx-oldjoystickbit",
-    "description": "",
+    "name": "pxt-oldjoystickbit",
+    "description": "An attempt to make the Elecfreaks joystick:bit version1.4 more usable for my nephews",
     "dependencies": {
         "core": "*",
         "microphone": "*"
