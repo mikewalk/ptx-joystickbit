@@ -3,8 +3,8 @@
 
 ![icon](https://raw.githubusercontent.com/mikewalk/pxt-oldjoystickbit/master/icon.png)
 
-Visit [https://www.elecfreaks.com/joystick-bit-for-micro-bit.html](Elecfreaks page for joystick details).
-Open [https://mikewalk.github.io/pxt-oldjoystickbit/](this README page here).
+* [Elecfreaks page for joystick details]( https://www.elecfreaks.com/joystick-bit-for-micro-bit.html).
+* [This README](https://mikewalk.github.io/pxt-oldjoystickbit/).
 
 ## Use as Extension in Makecode
 
